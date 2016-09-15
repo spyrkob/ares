@@ -27,7 +27,7 @@ ADD sshd/ssh_host_key /etc/ssh/
 ADD sshd/ssh_host_key.pub /etc/ssh/
 ADD sshd/ssh_host_rsa_key /etc/ssh/
 ADD sshd/ssh_host_rsa_key.pub /etc/ssh/
-RUN yum -y install openssh-server java-1.7.0-openjdk-devel git which wget zip unzip svn
+RUN yum -y install openssh-server java-1.7.0-openjdk-devel java-1.8.0-openjdk-devel git which wget zip unzip svn
 
 RUN echo "root:password" | chpasswd
 RUN groupadd -g 498 jboss
