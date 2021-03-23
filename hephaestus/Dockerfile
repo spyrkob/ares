@@ -2,7 +2,8 @@ FROM jenkins/jenkins:2.235.5-lts
 ARG jenkins_home=/var/jenkins_home
 
 ENV JAVA_OPTS -Djenkins.install.runSetupWizard=false
-#ENV JENKINS_ARGS="--prefix=/jenkins"
+ENV JENKINS_ARGS="--prefix=/jenkins"
+ENV JENKINS_OPTS="--prefix=/jenkins"
 ENV CASC_JENKINS_CONFIG /casc.yaml
 COPY set-plugins-list.txt $jenkins_home/set-plugins-list.txt
 RUN /usr/local/bin/install-plugins.sh < $jenkins_home/set-plugins-list.txt
