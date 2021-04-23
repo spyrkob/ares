@@ -1,7 +1,7 @@
 FROM jenkins/jenkins:2.235.5-lts
 ARG jenkins_home=/var/jenkins_home
 
-ENV JAVA_OPTS -Djenkins.install.runSetupWizard=false
+ENV JAVA_OPTS -Djenkins.install.runSetupWizard=false -Djavax.net.ssl.trustStore=$jenkins_home/cacerts
 ENV JENKINS_ARGS="--prefix=/jenkins"
 ENV JENKINS_OPTS="--prefix=/jenkins"
 ENV CASC_JENKINS_CONFIG /casc.yaml
