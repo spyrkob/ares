@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:2.235.5-lts
+FROM jenkins/jenkins:2.277.4-lts-centos
 ARG jenkins_home=/var/jenkins_home
 
 ENV JAVA_OPTS -Djenkins.install.runSetupWizard=false -Djavax.net.ssl.trustStore=$jenkins_home/cacerts
