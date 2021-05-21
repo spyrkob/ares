@@ -56,7 +56,6 @@ handlebars:latest
 workflow-cps:latest
 pipeline-stage-tags-metadata:latest
 workflow-scm-step:latest
-pipeline-model-declarative-agent:latest
 matrix-auth:latest
 docker-java-api:latest
 pipeline-graph-analysis:latest
