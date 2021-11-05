@@ -80,3 +80,4 @@ workflow-aggregator:latest
 plugin-usage-plugin:latest
 role-strategy:latest
 envinject:latest
+job-dsl:latest
