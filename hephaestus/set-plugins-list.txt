@@ -85,3 +85,4 @@ pipeline-utility-steps:latest
 authorize-project:latest
 copyartifact:latest
 ownership:latest
+startup-trigger-plugin:latest
