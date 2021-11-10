@@ -83,6 +83,5 @@ envinject:latest
 job-dsl:latest
 pipeline-utility-steps:latest
 authorize-project:latest
-authorize-project:latest
 copyartifact:latest
 ownership:latest
